@@ -54,58 +54,56 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int salary = 15000;
-        int total = 0;
+        int total = 15000;
         int i = 1;
         for (; total < 12000000; i++) {
-            total = total + salary * 100 / 7;
+            total = total + total * 7 / 100;
             System.out.println("Месяц " + i + " сумма накоплений " + total);
 
         }
-        System.out.println("Итоговая сумма накоплений" + total);
+        System.out.println( "Для того чтоб накопить необходимую сумму потребуется " + i + " месяцев");
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        int salary = 15000;
-        int total = 0;
+        int total = 15000;
         int i = 1;
         for (; total < 12000000; i++) {
-            total = total + salary * 100 / 7;
+            total = total + total * 7 / 100;
             if
             (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений " + total);
             }
 
         }
-        System.out.println("Итоговая сумма " + total);
+        System.out.println( "Для того чтоб накопить необходимую сумму потребуется " + i + " месяцев");
 
     }
 
     public static void task6() {
         System.out.println("Задача 6");
-        int salary = 15000;
-        int total = 0;
+        int total = 15000;
         int i = 1;
         for (; i <= 108; i++) {
-            total = total + salary * 100 / 7;
+            total = total + total * 7 / 100;
             if
             (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений " + total);
             }
 
         }
-        System.out.println("Итоговая сумма накоплений " + total);
+        System.out.println("За 9 лет сумма накоплений составит " + total);
 
     }
 
     public static void task7() {
         System.out.println("Задача 7");
-        int friday = 7;
-        while (friday <= 31) {
-            friday++;
+        int friday = 3;
+        System.out.println("Сегодня пятница " + friday + "-e число. Необходимо подготовить отчет.");
+        while (friday < 31) {
+            friday += 7;
 
-            if (friday % 7 == 0) {
+            if (friday < 31) {
                 System.out.println("Сегодня пятница " + friday + "-e число. Необходимо подготовить отчет.");
             }
         }
